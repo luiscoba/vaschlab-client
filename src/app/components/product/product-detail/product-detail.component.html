@@ -1,0 +1,32 @@
+<div class="card">
+    <div class="card-header">
+        {{ productDetail }}
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-4">Nombre:</div>
+                    <div class="col-md-8">{{ product?.productName }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">Descripción:</div>
+                    <div class="col-md-8">{{ product?.description }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">Fecha Creación:</div>
+                    <div class="col-md-8">{{ product?.createDate }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">Precio:</div>
+                    <div class="col-md-8">{{ product?.price | currency: "C$ " }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-outline-secondary" (click)="Back()">
+      <i class="fa fa-chevron-left"></i> Atrás
+    </button>
+    </div>
+</div>

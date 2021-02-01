@@ -1,0 +1,42 @@
+<div class="card">
+    <div class="card-header">
+        {{ productTitle }}
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-2">Filtrar por:</div>
+            <div class="col-md-4">
+                <input [(ngModel)]="listFilter" class="form-control" name="filter" type="text" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Filtro: {{ listFilter }}</h3>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table" *ngIf="products.length">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Fecha Creación</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of products | productFilter: listFilter">
+                        <td>
+                            <a [routerLink]="['/productDetail', product.productId]">{{
+                product.productName | uppercase
+              }}</a>
+                        </td>
+                        <td>{{ product.description }}</td>
+                        <td>{{ product.createDate | date: "dd/MM/yyyy" }}</td>
+                        <td>{{ product.price | currency: "C$ " }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

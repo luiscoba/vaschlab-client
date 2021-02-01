@@ -1,0 +1,20 @@
+[
+    {
+      "productId": 1,
+      "productName": "Camisa Volcom",
+      "description": "Camisa 100% algodón",
+      "createDate": "May 21, 2020",
+      "price": 500,
+      "rating": 2.6,
+      "imageUrl": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/v/o/volcom-quiver-pocket-t-shirt-black-1.1506665293.jpg"
+    },
+    {
+      "productId": 2,
+      "productName": "Camisa Element",
+      "description": "Camisa 100% algodón",
+      "createDate": "May 26, 2020",
+      "price": 600,
+      "rating": 4.8,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQM6W7wHF29J2C6DFCxuvIzG9cRX7jzXkV-9r0CnQOrjdYeCfzk&usqp=CAU"
+    }
+]
